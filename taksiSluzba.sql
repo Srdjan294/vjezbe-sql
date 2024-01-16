@@ -1,6 +1,6 @@
---7. Taksi sluba 
---Taksi tvrtka ima više vozila. Jedno vozilo vozi jedan vozaè. U jednoj vonji vozaè moe prevesti više putnika. 
---Jedan putnik se naravno moe tijekom vremena imati više vonji.
+ï»¿--7. Taksi sluÅ¾ba 
+--Taksi tvrtka ima viÅ¡e vozila. Jedno vozilo vozi jedan vozaÄ. U jednoj voÅ¾nji vozaÄ moÅ¾e prevesti viÅ¡e putnika. 
+--Jedan putnik se naravno moÅ¾e tijekom vremena imati viÅ¡e voÅ¾nji.
 
 use master;
 go 
@@ -62,9 +62,9 @@ alter table stavke add foreign key (putnik) references putnici(sifra);
 
 
 insert into vozaci(ime, prezime, iban) values
-('Marko', 'Jeliæ', 'HR5423400098135242496'),
-('Ivan', 'Mariæ', 'HR5423400098135549496'),
-('Josip', 'Josipoviæ', 'HR5943400098135242496');
+('Marko', 'JeliÄ‡', 'HR5423400098135242496'),
+('Ivan', 'MariÄ‡', 'HR5423400098135549496'),
+('Josip', 'JosipoviÄ‡', 'HR5943400098135242496');
 
 insert into vozila(registracija, marka, vozac) values
 ('os-435-nk', 'golf 5', 1),
@@ -72,9 +72,9 @@ insert into vozila(registracija, marka, vozac) values
 ('os-003-ko', 'mercedes', 1);
 
 insert into putnici(ime, prezime, brojMobitela) values
-('Mirko', 'Voliæ', '0983276473'),
+('Mirko', 'VoliÄ‡', '0983276473'),
 ('Jasna', 'Tabak', '0917488375'),
-('Marko', 'Toliæ', '0923748576');
+('Marko', 'ToliÄ‡', '0923748576');
 
 insert into voznje(vrijeme, vozilo) values
 ('2024-12-01 17:45:00', 1),
